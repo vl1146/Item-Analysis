@@ -1,6 +1,6 @@
 #######Part 1 - Item Analysis for Conscientiousness Test
 
-data <-  read.csv("C:/Users/Vin/Desktop/Selection/IA Project/datascored.csv")
+data <-  read.csv("")
 
 library(dplyr)
 library(sjPlot)
