@@ -19,50 +19,6 @@ ggcorrplot(data, type ="lower", lab = TRUE)
 datat <- data %>% mutate(Total = rowSums(.))
 hist(datat$Total)
 
-#remove Q7 and see changes
-
-data2 <- subset(data, select = -Q7)
-tab_itemscale(data2)
-corr1 <- cor(apply(data2,2,as.numeric))
-ggcorrplot(corr1, type ="lower", lab = TRUE)
-
-#remove Q2
-
-data3 <- subset(data2, select = -Q2)
-tab_itemscale(data3)
-corr2 <- cor(apply(data3,2,as.numeric))
-ggcorrplot(corr2, type ="lower", lab = TRUE)
-
-#remove Q16
-
-data4 <- subset(data3, select = -Q16)
-tab_itemscale(data4)
-corr3 <- cor(apply(data4,2,as.numeric))
-ggcorrplot(corr3, type ="lower", lab = TRUE)
-
-#remove Q11
-
-data5 <- subset(data4, select = -Q11)
-tab_itemscale(data5)
-corr4 <- cor(apply(data5,2,as.numeric))
-ggcorrplot(corr4, type ="lower", lab = TRUE)
-
-#remove Q3
-
-data6 <- subset(data5, select = -Q3)
-tab_itemscale(data6)
-corr5 <- cor(apply(data6,2,as.numeric))
-ggcorrplot(corr5, type ="lower", lab = TRUE)
-
-#View distribution and descriptives for remaining items
-
-data6t <- data6 %>% mutate(Total = rowSums(.))
-hist(data6t$Total)
-mean(data6t$Total)
-sd(data6t$Total)
-median(data6t$Total)
-
-
 #CFA to check unidimensionality of test
 library(lavaan)
 
@@ -141,7 +97,6 @@ tab_itemscale(F12)
 corrF12 <- cor(apply(F12,2,as.numeric))
 ggcorrplot(corrF12, type ="lower", lab = TRUE)
 
-
 data11 <- subset(F12, select = -Q16)
 tab_itemscale(data11)
 corr10 <- cor(apply(data11,2,as.numeric))
@@ -149,7 +104,6 @@ ggcorrplot(corr10, type ="lower", lab = TRUE)
 data10t <- data11 %>% mutate(Total = rowSums(.))
 
 data11t <- data11 %>% mutate(Total = rowSums(.))
-
 
 #Distribution and descriptives for final result
 
