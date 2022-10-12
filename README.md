@@ -4,8 +4,7 @@ To improve the internal consistency of the conscientiousness test, Cronbach's Al
 
 A validation study was used to measure the predictive validity of the tools used during the selection process. Supervisor ratings and 
 commendations/complaints given by the public were used as criterion variables to evaluate the predictive validity of the conscientiousness test, 
-the cognitive skills test, and the interview. The three predictor variables were also investigated to determine potential bias on scores due to race 
-or gender.
+the cognitive skills test, and the interview. The three predictor variables were also investigated to determine potential bias due to race or gender.
 
 Results indicated no significant differences in criterion or predictor variables based on gender. Significant differences were found in both criterion
 and predictor variables based on race.
